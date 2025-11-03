@@ -1,0 +1,26 @@
+{
+    "version": 5,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conf-project",
+            "hidden": true,
+            "cacheVariables" : {
+                "SC_PROJECT_NAME" : "enum-flags",
+                "SC_PROJECT_DESCRIPTION" : "Bit flags for C++ scoped enums.",
+                "SC_PROJECT_VERSION" : "0.1.1",
+                "SC_PROJECT_NAMESPACE" : "enum-flags",
+                "SC_PROJECT_LANGUAGES" : "C;CXX",
+                "SC_PROJECT_LOCALES" : "en",
+                "SC_PROJECT_LINK" : "https://github.com/grisumbras/enum-flags",
+                "SC_PROJECT_EMAIL" : "grisumbras@gmail.com",
+                "SC_PROJECT_AUTHOR" : "Dmitry Arkhipov",
+                "SC_PROJECT_COPYRIGHT" : "MIT"
+            }
+        }
+    ]
+}

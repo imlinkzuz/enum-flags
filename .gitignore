@@ -1,29 +1,37 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Build directories and binary files
+build/
+out/
+out/coverage/*
+cmake-build-*/
+conan-cache/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# User spesific settings
+CMakeUserPresets.json
+LocalPresets.json
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# IDE files
+.vs/
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.bak
+*.swp
+*~
+_ReSharper*
+*.log
 
-# Executables
-*.exe
-*.out
-*.app
-
-# Test artefacts
-/bin
-test/bin
-
-# Conan artificats
-/tmp
-test/build
+# OS Generated Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.Trash-*
+$RECYCLE.BIN/
+.TemporaryItems
+ehthumbs.db
+Thumbs.db

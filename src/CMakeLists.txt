@@ -1,0 +1,15 @@
+include(${SIDECMAKE_DIR}/SCInstall.cmake)
+
+sc_install_library(
+  TARGET_NAME "enum-flags"
+  PROJECT_NAME ${PROJECT_NAME}
+  LINK_TYPE INTERFACE 
+  TARGET_PROPERTIES 
+    VERSION ${PROJECT_VERSION}
+  INTERFACE_INCLUDE_DIRS
+    "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>"
+    "$<INSTALL_INTERFACE:${CMAKE_INSTALL_DIR}/include>"
+  INSTALLED_INCLUDE_DIRS 
+    "include/flags"
+
+)

@@ -1,9 +1,5 @@
 # enum-flags
 
-[![Download](https://api.bintray.com/packages/grisumbras/conan/enum-flags:grisumbras/images/download.svg?version=0.1.0:testing) ](https://bintray.com/grisumbras/conan/enum-flags:grisumbras/0.1.0:testing/link)
-![Build Status](https://github.com/grisumbras/enum-flags/workflows/publish/badge.svg)
-![License](https://img.shields.io/github/license/grisumbras/enum-flags.svg)
-
 > Bit flags for C++ scoped enums
 
 C++ 11 added a new type of enums — *enum classes*.
@@ -19,35 +15,17 @@ and there are no bitwise operators overloads defined for them.
 This library brings a `flags` class template which provides bit flags for
 scoped enums.
 
+ > [!TIP]
+ > It's a revision to demostrate building of head-only library and should-not-compile testing of SideCMake.
+ > The original repository utilizes Conan for building; however, I have replaced Conan with CMake for easier maintenance, as my familiarity with Conan is limited.
 
 ## Install
 
-### Using Conan
-
-Add required remote:
-
-```shell
-$ conan remote add grisumbras https://api.bintray.com/conan/grisumbras/conan
+### Using CMake and SideCMake 
 
 ```
-
-Use inside `conanfile.txt`:
-
-```ini
-[requires]
-enum-flags/[>=0.1]@grisumbras/testing
-
+# will to do later
 ```
-
-
-### Installing from source
-
-Download source code and run from inside the project root:
-
-```shell
-$ b2 install --prefix=/path/to/installation/prefix
-```
-
 
 ## Usage
 
