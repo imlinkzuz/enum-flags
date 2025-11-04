@@ -23,10 +23,26 @@ scoped enums.
 
 ### Using CMake and SideCMake 
 
+```bash
+vcpkg install boost
+git clone https://github.com/grisumbras/enum-flags.git
+cd enum-flags
+cp ./enum-flags/LocalPresets.json.empty ./enum-flags/LocalPresets.json
+mkdir _build
+cmake "-S./enum-flags" 
+      -G "Ninja" 
+      "-B./_build" 
+      "-DCMAKE_INSTALL_PREFIX=./install" 
+      --preset unixlike-clang-release
+      "-DSIDECMAKE_DIR=/path/to/SideCMake/"
+      "-DBUILD_TESTING=ON"
+      "-DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake"
+cmake --build "./_build" --target install --config "Release"
 ```
-# will to do later
-```
-
+> [!TIP]
+> - Pick an options for `--preset` in `CMakePresets.json` section : `configurePresets`
+> - Boost is required only if you build or run tests (when `BUILD_TESTING` is `ON`).
+> - We recommend vcpkg for package management, but you may use any package manager you prefer.
 ## Usage
 
 ``` c++
