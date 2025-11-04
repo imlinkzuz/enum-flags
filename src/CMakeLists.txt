@@ -8,7 +8,7 @@ sc_install_library(
     VERSION ${PROJECT_VERSION}
   INTERFACE_INCLUDE_DIRS
     "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>"
-    "$<INSTALL_INTERFACE:${CMAKE_INSTALL_DIR}/include>"
+    "$<INSTALL_INTERFACE:include>"
   INSTALLED_INCLUDE_DIRS 
     "include/flags"
 
